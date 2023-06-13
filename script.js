@@ -10,9 +10,17 @@ close.addEventListener('click', function(){
    showSideBar.style.display = "none";
 });
 
-let box2 = document.getElementsByClassName('nav-box2')[0];
-let showPopOver = document.getElementsByClassName('nav-box2-popover-background')[0];
 
-box2.addEventListener('click', function(){
-  showPopOver.style.display = "block";
-})
+
+  let box2 = document.querySelector('.nav-box2');
+  let showPopOver = document.querySelector('.nav-box2-popover-background');
+  let popover =document.querySelector('.nav-box2-popover')
+  box2.addEventListener('click', function(){
+    showPopOver.style.display="block"
+  })
+  showPopOver.addEventListener('click', function(){
+    showPopOver.style.display= "none"
+  })
+  
+  
+
