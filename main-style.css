@@ -1,14 +1,91 @@
 /*------------images section-------------------*/
+#mid-section{
+  width: 100%;
+    /* margin: 0px 10px 0px 10px; */
+}
 #images {
-  height: 5000px;
-  max-width: 100%;
+  width: 100%;
 }
 
-#images:before {
-  content: "";
+#img1 {
   position: absolute;
   height: 85.6%;
   width: 100%;
-  background: url("img/section-img.jpg") no-repeat center center/cover;
-  z-index: -1;
+  /*display: none;*/
+}
+#img2{
+  position: absolute;
+  height: 85.6%;
+  width: 100%;
+  display: none;
+  animation: imageEnter 0.3s forwards;
+}
+@keyframes imageEnter {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: 0;
+  }
+}
+#img3 {
+  position: absolute;
+  height: 85.6%;
+  width: 100%;
+  display: none;
+}
+#img4 {
+  position: absolute;
+  height: 85.6%;
+  width: 100%;
+  display: none;
+}
+#img5 {
+  position: absolute;
+  height: 85.6%;
+  width: 100%;
+  display: none;
+}
+
+#btn1{
+  /* border: 2px solid red; */
+  height: 250px;
+  background: none;
+  font-size: 70px;
+  position: absolute;
+  border: none;
+  left: 0;
+  padding: 0px 20px 0px 20px;
+}
+
+#btn2{
+  /* border: 2px solid red; */
+  height: 250px;
+  background: none;
+  font-size: 70px;
+  position: absolute;
+  border: none;
+  right: 0;
+  padding: 0px 20px 0px 20px;
+}
+#btn1:hover{
+  border: 3px solid rgb(15, 172, 215);
+  box-shadow: 1px 1px 0px 0px white;
+  border-radius: 7px;
+ 
+}
+#btn2:hover{
+  border: 3px solid rgb(15, 172, 215);
+  box-shadow: -1px 1px 0px 0px white;
+  border-radius: 7px;
+ 
+}
+/*--------------- Card section -----------------------*/
+#card{
+  /* border: 2px solid red; */
+  position: relative;
+  top: 250px;
+  left: 0px;
+  height: 1000px;
+  width: 100%;
 }
