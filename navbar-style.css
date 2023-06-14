@@ -2,8 +2,8 @@ body {
   margin: 0;
   padding: 0;
   /* font-family: "Poppins", sans-serif; */
-  
-font-family: 'Roboto', sans-serif;
+
+  font-family: "Roboto", sans-serif;
 }
 .nav-belt {
   display: flex;
@@ -176,6 +176,114 @@ font-family: 'Roboto', sans-serif;
   color: aliceblue;
 }
 /*---------------------- navbelt popovers and dropdown menus-------------------------------------*/
+
+/*------ SIDE-BAR STARTS---------*/
+.side-bar-background {
+  top: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  display: none;
+}
+
+.side-bar-background:before {
+  content: "";
+  position: absolute;
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  opacity: 0.8;
+}
+
+.side-bar {
+  position: absolute;
+  width: 350px;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  animation: sidebarEnter 0.3s forwards;
+}
+@keyframes sidebarEnter {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 0;
+  }
+}
+.side-content {
+  overflow: scroll;
+  height: 100%;
+}
+.side-bar-header {
+  height: 52px;
+  width: 100%;
+  background-color: #232f3e;
+  color: white;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  overflow: visible;
+}
+.side-bar-header img {
+  height: 27px;
+  width: 25px;
+  filter: invert(100%);
+  padding: 0px 10px 0px 0px;
+  margin: 0px 0px 0px 30px;
+}
+.side-box {
+  width: 100%;
+  border-bottom: 1px solid rgb(204, 204, 204);
+  padding-bottom: 7px;
+}
+.side-box-heading {
+  border: 2px solid white;
+  padding: 0px 0px 0px 33px;
+  height: 50px;
+}
+.side-box-content {
+  padding: 12px 10px 15px 33px;
+  /* border: 2px solid red; */
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+  opacity: 0.8;
+  display: flex;
+  align-items: center;
+}
+.side-box-content:hover {
+  background-color: #efeeee;
+}
+.Settings-box {
+  /* border: 2px solid red; */
+  margin-bottom: 25px;
+  border: none;
+}
+.close {
+  /* border: 2px solid red; */
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 350px;
+  top: 5px;
+}
+.close button {
+  font-size: 30px;
+  /* font-weight: bold; */
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+} /*------- SIDE-BAR CLOSES ------ */
+
+/*---------- BOX2 POPOVER STARTS ------------*/
 .nav-box2-popover-background {
   top: 0;
   width: 100%;
@@ -184,7 +292,7 @@ font-family: 'Roboto', sans-serif;
   z-index: 1;
   display: none;
 }
-.nav-box2-popover-background::before{
+.nav-box2-popover-background::before {
   content: "";
   position: absolute;
   background-color: black;
@@ -197,6 +305,7 @@ font-family: 'Roboto', sans-serif;
   background-color: white;
   color: black;
   border-radius: 10px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   height: 300px;
   width: 380px;
   display: flex;
@@ -205,46 +314,69 @@ font-family: 'Roboto', sans-serif;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
 }
-.box2-popover-header{
+.box2-popover-header {
   border-bottom: 1px solid rgb(217, 216, 216);
   border-radius: 10px;
   background-color: rgb(241, 241, 241);
   height: 55px;
- 
+
   display: flex;
   align-items: center;
   padding-left: 20px;
 }
-.box2-popover-content{
+.box2-popover-content {
   /* border: 2px solid red; */
   height: 100%;
   margin: 0px 20px 0px 20px;
 }
-.box2-popover-content>p{
+.box2-popover-content > p {
   font-size: 13px;
   font-weight: 500;
   padding: 8px 0px 0px 0px;
-  
+
   color: #7c7d7e;
 }
-.box2-popover-content>button{
+.box2-popover-content > button {
   /* margin: 0px 0px 0px 20px; */
-  width:100% ;
+  width: 100%;
   height: 31px;
   border-radius: 8px;
   border: none;
-  background-color:rgb(255, 221, 49) ;
+  background-color: rgb(255, 221, 49);
   box-shadow: -0.1px 0.4px 0px 0.5px rgb(213, 213, 213);
   font-size: 13px;
   font-weight: 500;
   cursor: pointer;
 }
-.box2-popover-content>button:hover{
+.box2-popover-content > button:hover {
   background-color: rgb(251, 211, 13);
 }
 
+/*---------- NAV-BOX3 Dropdown STARTS ------------*/
+.nav-box3-dropdown {
+  position: absolute;
+  border: 2px solid rgb(189, 188, 188);
+  border-radius: 8px;
+  top: 46px;
+  left: 320px;
+  height: 367px;
+  width: 200px;
+  background-color: white;
+  z-index: 1;
+  overflow: scroll;
+  /* padding: 3px; */
+  display: none;
+}
+.nav-box3-dropdown > div {
+  padding: 0px 2px 0px 3px;
+  font-size: 15px;
+  opacity: 0.9;
+}
+.nav-box3-dropdown > div:hover {
+  background-color: rgb(10, 129, 241);
+  color: white;
+}
 
 /*-------------------- MINI NAV BELT START FORM HERE -------------------------------------------------- */
 .nav-belt-mini {
@@ -313,7 +445,6 @@ font-family: 'Roboto', sans-serif;
 }
 .nav-mini-right {
   width: 620px;
-
   margin: 0px 0px 0px 18px;
   display: flex;
   align-items: center;
@@ -322,88 +453,4 @@ font-family: 'Roboto', sans-serif;
 .nav-mini-right img {
   width: 410px;
   padding: 0px 3px 3px 8px;
-}
-
-
-/*--------------------- SIDE BAR ---------------------*/
-
-.side-bar-background {
-  top: 0;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: 1;
-  display: none;
-}
-
-.side-bar-background:before {
-  content: "";
-  position: absolute;
-  background-color: black;
-  height: 100%;
-  width: 100%;
-  opacity: 0.8;
-}
-
-.side-bar {
-  position: absolute;
-  width: 350px;
-  height: 100%;
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  animation: sidebarEnter 0.3s forwards;
-}
-@keyframes sidebarEnter {
-  0% {
-    left: -100%;
-  }
-  100% {
-    left: 0;
-  }
-}
-.side-content {
-  overflow: scroll;
-  height: 100%;
-}
-.side-navbar {
-  height: 50px;
-  width: 100%;
-  background-color: #232f3e;
-  color: white;
-  display: flex;
-  align-items: center;
-  font-size: 18px;
-  font-weight: bold;
-  overflow: visible;
-}
-.side-navbar img {
-  height: 27px;
-  width: 25px;
-  filter: invert(100%);
-  padding: 0px 10px 0px 0px;
-  margin: 0px 0px 0px 30px;
-}
-.side-box {
-  /* border: 2px solid blue; */
-  width: 100%;
-}
-.close{
-  /* border: 2px solid red; */
-  position: absolute;
-  height: 40px;
-  width: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  left: 350px;
-  top: 5px;
-}
-.close button{
-  font-size: 30px;
-  /* font-weight: bold; */
-  background: none;
-  border: none;
-  color: white;
-  cursor: pointer;
 }
