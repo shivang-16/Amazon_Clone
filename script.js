@@ -30,3 +30,20 @@ box3.addEventListener("click", function () {
     box3dropdown.style.display = "none";
   }
 });
+
+
+
+  let button1 = document.querySelector("#btn1");
+let button2 = document.querySelector("#btn2");
+
+let img1 = document.querySelector('#img1');
+let img2 = document.querySelector('#img2');
+
+button1.addEventListener('click', function(){
+  img2.style.display = "block"
+})
+button2.addEventListener('click', function(){
+  img2.style.display = "block"
+})
+
+
