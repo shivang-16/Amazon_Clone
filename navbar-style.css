@@ -226,6 +226,7 @@ body {
   font-size: 18px;
   font-weight: bold;
   overflow: visible;
+  cursor: pointer;
 }
 .side-bar-header img {
   height: 27px;
@@ -253,6 +254,7 @@ body {
   opacity: 0.8;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 .side-box-content:hover {
   background-color: #efeeee;
@@ -376,7 +378,41 @@ body {
   background-color: rgb(10, 129, 241);
   color: white;
 }
+/*******************************************************/
+.nav-box9-dropdown-background{
+  height: 85.3%;
+  width: 100%;
+  position: absolute;
+  top: 100px;
+  z-index: 1;
+  display: none;
+}
+.nav-box9-dropdown-background::before{
+  content: "";
+  position: absolute;
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+}
+.nav-box9-dropdown{
+  background-color: white;
+  border: 15px solid rgb(255, 255, 255);
+  border-radius: 7px;
+  height: 320px;
+  width: 320px;
+  position: absolute;
+  left: 824px;
+  z-index: 1;
 
+}
+.nav-box9-dropdown img{
+  height: 100%;
+  width: 100%;
+}
+.nav-mini-mid-box9:hover .nav-box9-dropdown-background{
+display: block;
+}
 /*-------------------- MINI NAV BELT START FORM HERE -------------------------------------------------- */
 .nav-belt-mini {
   display: flex;
@@ -422,7 +458,6 @@ body {
 .nav-mini-mid {
   width: 100%;
   display: flex;
-  justify-content: center;
   align-items: center;
   margin-bottom: 1px;
   flex-wrap: wrap;
@@ -443,13 +478,15 @@ body {
   border-radius: 4px;
 }
 .nav-mini-right {
-  width: 620px;
+  width: 410px;
   margin: 0px 0px 0px 18px;
   display: flex;
   align-items: center;
 }
 
 .nav-mini-right img {
+  position: relative;
   width: 410px;
-  padding: 0px 3px 3px 8px;
+  height: 100%;
+  padding: 4px 0px 0px 0px;
 }
