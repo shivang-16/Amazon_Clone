@@ -28,31 +28,37 @@ body {
   margin: 3px 1px 3px 3px;
   position: relative;
 }
-.nav-left-box:hover {
-  border: 1px solid white;
-  border-radius: 5px;
-}
 .nav-box1 {
   width: 230px;
   align-items: center;
   justify-content: center;
 }
 .nav-box1 img {
-  height: 40px;
-  /* filter: invert(100%); */
-}
-.nav-box2 img {
-  padding: 2px;
-  height: 45px;
-  /* filter: invert(100%); */
+  position: relative;
+  top: 3px;
+  height: 50px;
 }
 
+.nav-box2{
+ margin-right: 15px;
+}
+.nav-box2 img {
+ 
+  position: relative;
+  top: 1px;
+  height: 50px;
+  width: 100%;
+  /* filter: invert(100%); */
+}
+.nav-left img:hover {
+  border: 1px solid white;
+  border-radius: 3px;
+}
 .nav-mid {
   display: flex;
   position: relative;
   width: 800px;
   background-color: white;
-
   border-radius: 8px;
   height: 40px;
   align-self: center;
@@ -60,7 +66,7 @@ body {
 
 .nav-box3 {
   width: 57px !important;
-  height: 40px !important ;
+  height: 40px !important;
   margin-left: 0px;
   background-color: rgb(233, 233, 233);
   display: flex;
@@ -116,11 +122,10 @@ body {
 }
 .nav-right {
   display: flex;
-  /* border: 1px solid rgb(255, 9, 9); */
-  width: 420px;
+  width: 400px;
   align-items: center;
   justify-content: center;
-  /* margin-left: 10px ; */
+  
 }
 .nav-right-box {
   /* border: 1px solid cyan; */
@@ -130,7 +135,7 @@ body {
 }
 .nav-right-box:hover {
   border: 1px solid white;
-  border-radius: 4px;
+  border-radius: 3px;
 }
 .nav-box6 {
   display: flex;
@@ -174,7 +179,7 @@ body {
   height: 50px;
   color: aliceblue;
 }
-/*---------------------- navbelt popovers and dropdown menus-------------------------------------*/
+/*---------- navbelt popovers and dropdown menus-------------------------------------*/
 
 /*------ SIDE-BAR STARTS---------*/
 .side-bar-background {
@@ -378,7 +383,39 @@ body {
   background-color: rgb(10, 129, 241);
   color: white;
 }
-/*******************************************************/
+
+/******** nav- box6 dropdown ***********************************************************/
+.nav-box6-dropdown-background{
+  /* border: 2px solid red; */
+  height: 650px;
+  width: 100%;
+  position: absolute;
+  top: 60px;
+  display: none;
+}
+.nav-box6-dropdown-background::before{
+  content: "";
+  position: absolute;
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  opacity: 0.2;
+}
+.nav-box6-dropdown{
+  border: 2px solid red;
+  background-color: white;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 1px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  height: 370px;
+  width: 230px;
+  position: absolute;
+  top: -7px;
+  right: 164px;
+  z-index: 1;
+}
+
+/******** nav-mini box9 dropdown ***********************************************************/
 .nav-box9-dropdown-background{
   height: 85.3%;
   width: 100%;
@@ -393,16 +430,17 @@ body {
   background-color: black;
   height: 100%;
   width: 100%;
-  opacity: 0.5;
+  opacity: 0.2;
 }
 .nav-box9-dropdown{
   background-color: white;
   border: 15px solid rgb(255, 255, 255);
-  border-radius: 7px;
-  height: 320px;
-  width: 320px;
+  border-radius: 3px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  height: 310px;
+  width: 310px;
   position: absolute;
-  left: 824px;
+  left: 819px;
   z-index: 1;
 
 }
@@ -410,9 +448,7 @@ body {
   height: 100%;
   width: 100%;
 }
-.nav-mini-mid-box9:hover .nav-box9-dropdown-background{
-display: block;
-}
+
 /*-------------------- MINI NAV BELT START FORM HERE -------------------------------------------------- */
 .nav-belt-mini {
   display: flex;
@@ -423,7 +459,7 @@ display: block;
 }
 .nav-mini-box:hover {
   border: 1px solid white;
-  border-radius: 4px;
+  border-radius: 2px;
 }
 .nav-mini-left {
   /* border: 2px solid red; */
@@ -466,7 +502,7 @@ display: block;
   left: 0;
 }
 .nav-mini-mid-box {
-  height: 100%;
+  height: 97%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -475,7 +511,7 @@ display: block;
 }
 .nav-mini-mid-box:hover {
   border: 1px solid white;
-  border-radius: 4px;
+  border-radius: 2px;
 }
 .nav-mini-right {
   width: 410px;
