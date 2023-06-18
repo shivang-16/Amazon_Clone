@@ -1,21 +1,21 @@
 /*------------images section-------------------*/
 #mid-section{
-  width: 100%;
-    /* margin: 0px 10px 0px 10px; */
-}
-#images {
-  width: 100%;
-}
-
-#img1 {
+  /* border: 2px solid red; */
   position: absolute;
-  height: 85.9%;
+  width: 98.7%;
+  height: 83%;
+  top: 100px;
+  margin: 0px 0px 0px 10px;
+
+}
+#img1 { 
+  position: absolute;
+  height: 100%;
   width: 100%;
-  /*display: none;*/
 }
 #img2{
   position: absolute;
-  height: 85.9%;
+  height: 100%;
   width: 100%;
   display: none;
   animation: imageEnter 0.3s forwards;
@@ -29,21 +29,18 @@
   }
 }
 #img3 {
-  position: absolute;
-  height: 85.6%;
+  height: 100%;
   width: 100%;
   display: none;
 }
 #img4 {
-  position: absolute;
-  height: 85.6%;
+  height: 100%;
   width: 100%;
   display: none;
 }
 #img5 {
-  position: absolute;
-  height: 85.6%;
-  width: 100%;
+  height: 100%;
+  width: 100%;;
   display: none;
 }
 
@@ -53,9 +50,14 @@
   background: none;
   font-size: 70px;
   position: absolute;
+  top: 0;
   border: none;
   left: 0;
   padding: 0px 20px 0px 20px;
+ 
+}
+#btn1::before{
+  
 }
 
 #btn2{
@@ -65,6 +67,7 @@
   font-size: 70px;
   position: absolute;
   border: none;
+  top: 0;
   right: 0;
   padding: 0px 20px 0px 20px;
 }
@@ -84,8 +87,80 @@
 #card{
   /* border: 2px solid red; */
   position: relative;
-  top: 250px;
+  top: 253px;
   left: 0px;
   height: 1000px;
   width: 100%;
+  /* margin: 0px 20px 20px 20px; */
+}
+.top-cards{
+  /* border: 2px solid red; */
+   display: flex;
+   justify-content: space-between; 
+    margin: 0px 20px 20px 20px;
+  }
+  .top-cards a, a:link, a:visited{
+    text-decoration: none;
+    color: #007185;
+    font-size: 13px;
+  }
+  .top-cards a:hover{
+    color: orange;
+    text-decoration: underline;
+  }
+ 
+.box-card{
+  /* border: 1px solid blue; */
+  width: 450px;
+  height: 420px;
+  display: flex;
+  flex-direction: column;
+  margin: 0px 10px 0px 10px;
+  background-color: white;
+  box-shadow: 0px 0px 3px rgb(132, 130, 130);
+ 
+}
+.card-header{
+  display: flex;
+
+  height: 55px;
+  margin: 0px 18px 0px 20px;
+  
+  font-size: 17px;
+}
+.card-image{
+
+  height: 305px;
+  margin: 0px 23px 0px 23px;
+  cursor: pointer;
+  
+}
+.card-image img{
+  width: 100%;
+  height: 100%;
+}
+.card-footer{
+  /* border: 2px solid green; */
+  height: 100px;
+  display: flex;
+  align-items: center;
+  margin: 0px 23px 0px 22px;
+  /* padding: 0px 20px 0px 20px; */
+  font-weight: bold;
+}
+.card7>.card-header{
+    height: 80px;
+}
+.card7>.card-image{
+  height: 368px;
+}
+.card7>.card-footer{
+  height: 85px;
+}
+
+.card8>.card-image{
+height: 368px;
+}
+.card8>.card-footer{
+height: 85px;
 }
