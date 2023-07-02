@@ -2,7 +2,7 @@
 #mid-section{
   /* border: 2px solid red; */
   position: absolute;
-  width: 98.7%;
+  width: 1540px;;
   height: 83%;
   top: 100px;
   margin: 0px 0px 0px 10px;
@@ -93,11 +93,17 @@
   width: 100%;
   /* margin: 0px 20px 20px 20px; */
 }
+.square-cards{
+  border: 2px solid red;
+  margin: 0px 20px 0px 20px;
+
+}
 .top-cards{
   /* border: 2px solid red; */
    display: flex;
    justify-content: space-between; 
-    margin: 0px 20px 20px 20px;
+   margin-bottom: 20px;
+  
   }
   .top-cards a, a:link, a:visited{
     text-decoration: none;
@@ -121,7 +127,7 @@
  
 }
 .card-header{
-  display: flex;
+  display: inline-block;
 
   height: 55px;
   margin: 0px 18px 0px 20px;
@@ -163,4 +169,8 @@ height: 368px;
 }
 .card8>.card-footer{
 height: 85px;
+}
+
+.rectangular-card{
+  border: 2px solid red;
 }
