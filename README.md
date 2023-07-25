@@ -1,2 +1,2 @@
-# Amazon_Clone
-This is the clone website of Amazon.in.. HTML, CSS and JAVASCRIPT are used
+# Amazon_Clone(Not completed Yet)
+This is the clone website of Amazon.in
