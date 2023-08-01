@@ -14,12 +14,12 @@ body {
     box-sizing: border-box;
 }
 html {
-  /* font-size: 100%; */
+
   -webkit-text-size-adjust: 100%;
 }
 main{
   font-family: "Amazon Ember",Arial,sans-serif;
-  /* display: flex; */
+
   font-size: 14px;
     line-height: 20px;
   background-color: #fff;;
