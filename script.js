@@ -65,8 +65,6 @@ box6dropdownbox.addEventListener('mouseleave', function(){
   box6dropdown.style.display = "none";
 })
 
-
-
 let button1 = document.querySelector("#btn1");
 let button2 = document.querySelector("#btn2");
 
